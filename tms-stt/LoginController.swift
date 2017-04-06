@@ -36,7 +36,7 @@ class LoginController: UIViewController {
         
         let url = URL(string: "http://10.177.255.172:4000/api/meeting/\(meetingId)/signin")! //change the url
         
-        MeetingManager.createRequest(url: url, parameters: parameters, completionHandler: loginHandler)
+        //MeetingManager.createRequest(url: url, parameters: parameters, completionHandler: loginHandler)
     }
     
     func loginHandler(result: [String: Any]) {
