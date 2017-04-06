@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "LoginController.(postCredentialsToLogin() -&gt; ()).(closure #1):LoginController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "json.meetingId">
+            </PersistentString>
+            <PersistentString
+               value = "JSONSerialization.jsonObject(with: data, options: .mutableContainers)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MainController.pushMissingTarget(Any) -&gt; ():MainController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "MeetingManager.sharedInstance">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LoginController.postCredentialsToLogin() -&gt; ():LoginController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.meetingIdTextfield.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
