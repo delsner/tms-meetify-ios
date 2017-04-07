@@ -8,18 +8,19 @@
 
 import UIKit
 
-class LoginController: UIViewController {
+class LoginController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var meetingIdTextfield: UITextField!
     @IBOutlet weak var usernameTextfield: UITextField!
     @IBOutlet weak var emailTextfield: UITextField!
     
     @IBOutlet weak var loginButton: UIButton!
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.meetingIdTextfield.delegate = self
+        self.usernameTextfield.delegate = self
+        self.emailTextfield.delegate = self
     }
     
     override func didReceiveMemoryWarning() {
@@ -34,7 +35,7 @@ class LoginController: UIViewController {
             return
         }
         
-        let url = URL(string: "http://10.177.255.172:4000/api/meeting/\(meetingId)/signin")! //change the url
+        let url = URL(string: "http://192.168.0.111:4000/api/meeting/\(meetingId)/signin") //change the url
         
         //MeetingManager.createRequest(url: url, parameters: parameters, completionHandler: loginHandler)
     }
@@ -44,7 +45,10 @@ class LoginController: UIViewController {
         MeetingManager.sharedInstance.currentUserId = result["yourUserId"] as! String
     }
     
-        
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
     
 }
 
