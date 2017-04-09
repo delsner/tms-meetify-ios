@@ -7,17 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AA18081CFA9C274F5520002 /* Pods_tms_stt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C8BB458733ADF9891DB483F /* Pods_tms_stt.framework */; };
+		3A7195841E9A432B00D077D7 /* SocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7195831E9A432B00D077D7 /* SocketIOManager.swift */; };
 		3A88602B1E94D4D1001F56D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A88602A1E94D4D1001F56D8 /* AppDelegate.swift */; };
 		3A88602D1E94D4D1001F56D8 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A88602C1E94D4D1001F56D8 /* MainController.swift */; };
 		3A8860301E94D4D1001F56D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A88602E1E94D4D1001F56D8 /* Main.storyboard */; };
 		3A8860321E94D4D1001F56D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A8860311E94D4D1001F56D8 /* Assets.xcassets */; };
 		3A8860351E94D4D1001F56D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A8860331E94D4D1001F56D8 /* LaunchScreen.storyboard */; };
+		3ADEF8CB1E98ED5600780297 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADEF8CA1E98ED5600780297 /* User.swift */; };
+		3ADEF8CD1E98ED6300780297 /* Meeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADEF8CC1E98ED6300780297 /* Meeting.swift */; };
 		8232DE9C1E94EA7A00BD2759 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8232DE9B1E94EA7A00BD2759 /* LoginController.swift */; };
 		8232DE9F1E957BE800BD2759 /* MeetingSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8232DE9E1E957BE800BD2759 /* MeetingSession.swift */; };
 		8232DEA11E957C6000BD2759 /* MeetingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8232DEA01E957C6000BD2759 /* MeetingManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C8BB458733ADF9891DB483F /* Pods_tms_stt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tms_stt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1006766B143B54E39635DB20 /* Pods-tms-stt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tms-stt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tms-stt/Pods-tms-stt.debug.xcconfig"; sourceTree = "<group>"; };
+		3A7195831E9A432B00D077D7 /* SocketIOManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOManager.swift; sourceTree = "<group>"; };
 		3A8860271E94D4D1001F56D8 /* tms-stt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tms-stt.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A88602A1E94D4D1001F56D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A88602C1E94D4D1001F56D8 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
@@ -25,9 +32,12 @@
 		3A8860311E94D4D1001F56D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A8860341E94D4D1001F56D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A8860361E94D4D1001F56D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3ADEF8CA1E98ED5600780297 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3ADEF8CC1E98ED6300780297 /* Meeting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meeting.swift; sourceTree = "<group>"; };
 		8232DE9B1E94EA7A00BD2759 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		8232DE9E1E957BE800BD2759 /* MeetingSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetingSession.swift; sourceTree = "<group>"; };
 		8232DEA01E957C6000BD2759 /* MeetingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetingManager.swift; sourceTree = "<group>"; };
+		8DE2770127B8D90C7986FB6C /* Pods-tms-stt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tms-stt.release.xcconfig"; path = "Pods/Target Support Files/Pods-tms-stt/Pods-tms-stt.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AA18081CFA9C274F5520002 /* Pods_tms_stt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +57,8 @@
 			children = (
 				3A8860291E94D4D1001F56D8 /* tms-stt */,
 				3A8860281E94D4D1001F56D8 /* Products */,
+				6EA51110CAA6E8009A735671 /* Pods */,
+				C0806256C46A49D8C52D09F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +76,9 @@
 				3A88602A1E94D4D1001F56D8 /* AppDelegate.swift */,
 				8232DE9E1E957BE800BD2759 /* MeetingSession.swift */,
 				8232DEA01E957C6000BD2759 /* MeetingManager.swift */,
+				3A7195831E9A432B00D077D7 /* SocketIOManager.swift */,
+				3ADEF8CA1E98ED5600780297 /* User.swift */,
+				3ADEF8CC1E98ED6300780297 /* Meeting.swift */,
 				8232DE9B1E94EA7A00BD2759 /* LoginController.swift */,
 				3A88602C1E94D4D1001F56D8 /* MainController.swift */,
 				3A88602E1E94D4D1001F56D8 /* Main.storyboard */,
@@ -73,6 +89,23 @@
 			path = "tms-stt";
 			sourceTree = "<group>";
 		};
+		6EA51110CAA6E8009A735671 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1006766B143B54E39635DB20 /* Pods-tms-stt.debug.xcconfig */,
+				8DE2770127B8D90C7986FB6C /* Pods-tms-stt.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C0806256C46A49D8C52D09F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C8BB458733ADF9891DB483F /* Pods_tms_stt.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A8860391E94D4D1001F56D8 /* Build configuration list for PBXNativeTarget "tms-stt" */;
 			buildPhases = (
+				1453181E37DCFD69E4E97C44 /* [CP] Check Pods Manifest.lock */,
 				3A8860231E94D4D1001F56D8 /* Sources */,
 				3A8860241E94D4D1001F56D8 /* Frameworks */,
 				3A8860251E94D4D1001F56D8 /* Resources */,
+				C39668AAD373265977F8660F /* [CP] Embed Pods Frameworks */,
+				7A2EEB816549361D72A7BEB1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -105,6 +141,7 @@
 				TargetAttributes = {
 					3A8860261E94D4D1001F56D8 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 435GHJZ6QQ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -140,13 +177,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1453181E37DCFD69E4E97C44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7A2EEB816549361D72A7BEB1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tms-stt/Pods-tms-stt-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C39668AAD373265977F8660F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tms-stt/Pods-tms-stt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3A8860231E94D4D1001F56D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ADEF8CD1E98ED6300780297 /* Meeting.swift in Sources */,
 				8232DE9F1E957BE800BD2759 /* MeetingSession.swift in Sources */,
 				8232DEA11E957C6000BD2759 /* MeetingManager.swift in Sources */,
+				3ADEF8CB1E98ED5600780297 /* User.swift in Sources */,
+				3A7195841E9A432B00D077D7 /* SocketIOManager.swift in Sources */,
 				3A88602D1E94D4D1001F56D8 /* MainController.swift in Sources */,
 				8232DE9C1E94EA7A00BD2759 /* LoginController.swift in Sources */,
 				3A88602B1E94D4D1001F56D8 /* AppDelegate.swift in Sources */,
@@ -270,9 +358,10 @@
 		};
 		3A88603A1E94D4D1001F56D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1006766B143B54E39635DB20 /* Pods-tms-stt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 435GHJZ6QQ;
 				INFOPLIST_FILE = "tms-stt/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.delsner.tms-stt";
@@ -283,9 +372,10 @@
 		};
 		3A88603B1E94D4D1001F56D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DE2770127B8D90C7986FB6C /* Pods-tms-stt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 435GHJZ6QQ;
 				INFOPLIST_FILE = "tms-stt/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.delsner.tms-stt";

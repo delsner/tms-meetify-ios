@@ -9,6 +9,9 @@
 import Foundation
 
 class MeetingSession {
-    var currentUserId: String = ""
+    var userId: String = ""
     var currentMeetingId: String = ""
+    var currentDecisionId: String = ""
+    var recording: Bool = false
+    var recordingTag: String = ""
 }

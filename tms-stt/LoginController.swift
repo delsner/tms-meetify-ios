@@ -25,9 +25,8 @@ class LoginController: UIViewController, UITextFieldDelegate {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-        //Drücken LoginButton -> Methode postCredentialsToLogin() wird aufgerufen
+    
     @IBAction func loginToMeeting(_ sender: Any) {
         let parameters = ["user":["name": usernameTextfield.text, "email": emailTextfield.text]] as Dictionary<String, Any>
         
@@ -35,14 +34,19 @@ class LoginController: UIViewController, UITextFieldDelegate {
             return
         }
         
-        let url = URL(string: "http://192.168.0.111:4000/api/meeting/\(meetingId)/signin") //change the url
+        let url = URL(string: "\(MeetingManager.url)\(meetingId)/signin")! //change the url
         
-        //MeetingManager.createRequest(url: url, parameters: parameters, completionHandler: loginHandler)
+        MeetingManager.createRequest(url: url, parameters: parameters, completionHandler: loginHandler)
     }
     
     func loginHandler(result: [String: Any]) {
-        MeetingManager.sharedInstance.currentMeetingId = result["meetingId"] as! String
-        MeetingManager.sharedInstance.currentUserId = result["yourUserId"] as! String
+
+        MeetingManager.sharedInstance.currentMeetingId = result["meetingName"] as! String
+        MeetingManager.sharedInstance.userId = result["currentUserId"] as! String
+        DispatchQueue.main.async {
+            self.performSegue(withIdentifier: "MainSegue", sender: self)
+        }
+
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "MainController.pushNote(Any) -&gt; ():MainController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "MeetingManager.sharedInstance">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SocketIOManager.(addListeners() -&gt; ()).(closure #1):SocketIOManager.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "json[&quot;recording&quot;]  as Bool">
+            </PersistentString>
+            <PersistentString
+               value = "recording = json?[&quot;recording&quot;] as! Bool?">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
