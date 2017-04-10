@@ -11,8 +11,8 @@ import Foundation
 class MeetingManager {
     static let sharedInstance = MeetingSession()
 
-    static let url = "http://192.168.2.109:4000/api/meeting/"
-    static let socketUrl = URL(string: "http://192.168.2.109:4000")!
+    static let url = "http://192.168.0.111:4000/api/meeting/"
+    static let socketUrl = URL(string: "http://192.168.0.111:4000")!
     
     static func createRequest(url: URL, parameters: Dictionary<String, Any>, completionHandler: @escaping (_ result: [String: Any]) -> Void) {
         

@@ -29,19 +29,25 @@ class MainController: UIViewController {
 
     func updateView() {
         DispatchQueue.main.async {
-            self.btn_Note.layer.borderWidth = 0
-            self.btn_Agree.layer.borderWidth = 0
-            self.btn_ToDo.layer.borderWidth = 0
+            self.btn_Note.layer.shadowRadius = 0
+            self.btn_Agree.layer.shadowRadius = 0
+            self.btn_ToDo.layer.shadowRadius = 0
             if MeetingManager.sharedInstance.recording {
                 if MeetingManager.sharedInstance.recordingTag == "NOTE" {
-                    self.btn_Note.layer.borderWidth = 2
-                    self.btn_Note.layer.borderColor = UIColor.blue.cgColor
+                    self.btn_Note.layer.shadowColor = UIColor.darkGray.cgColor
+                    self.btn_Note.layer.shadowOpacity = 1
+                    self.btn_Note.layer.shadowOffset = CGSize.zero
+                    self.btn_Note.layer.shadowRadius = 10
                 } else if MeetingManager.sharedInstance.recordingTag == "AGREEMENT" {
-                    self.btn_Agree.layer.borderWidth = 2
-                    self.btn_Agree.layer.borderColor = UIColor.blue.cgColor
+                    self.btn_Agree.layer.shadowColor = UIColor.darkGray.cgColor
+                    self.btn_Agree.layer.shadowOpacity = 1
+                    self.btn_Agree.layer.shadowOffset = CGSize.zero
+                    self.btn_Agree.layer.shadowRadius = 10
                 } else if MeetingManager.sharedInstance.recordingTag == "TASK" {
-                    self.btn_ToDo.layer.borderWidth = 2
-                    self.btn_ToDo.layer.borderColor = UIColor.blue.cgColor
+                    self.btn_ToDo.layer.shadowColor = UIColor.darkGray.cgColor
+                    self.btn_ToDo.layer.shadowOpacity = 1
+                    self.btn_ToDo.layer.shadowOffset = CGSize.zero
+                    self.btn_ToDo.layer.shadowRadius = 10
                 }
             }
         }
@@ -132,9 +138,9 @@ class MainController: UIViewController {
     @IBAction func VoteYes(_ sender: Any) {
         let parameters = ["user": MeetingManager.sharedInstance.userId, "vote": "YES"] as Dictionary<String, Any>
         if MeetingManager.sharedInstance.currentDecisionId != "" {
-            let url = URL(string: "\(MeetingManager.url)\(MeetingManager.sharedInstance.currentMeetingId)/decision/\(MeetingManager.sharedInstance.currentDecisionId)")!
+            let url = URL(string: "\(MeetingManager.url)\(MeetingManager.sharedInstance.currentMeetingId)/decision/\(MeetingManager.sharedInstance.currentDecisionId)/vote")!
 
-            MeetingManager.createRequest(url: url, parameters: parameters, completionHandler: ToDoCompletion as! (Any) -> Void)
+            MeetingManager.createRequest(url: url, parameters: parameters, completionHandler: VoteYesCompletion)
         }
     }
     
@@ -147,9 +153,9 @@ class MainController: UIViewController {
         let parameters = ["user": MeetingManager.sharedInstance.userId, "vote": "NO"] as Dictionary<String, Any>
 
         if MeetingManager.sharedInstance.currentDecisionId != "" {
-            let url = URL(string: "\(MeetingManager.url)\(MeetingManager.sharedInstance.currentMeetingId)/decision/\(MeetingManager.sharedInstance.currentDecisionId)")!
+            let url = URL(string: "\(MeetingManager.url)\(MeetingManager.sharedInstance.currentMeetingId)/decision/\(MeetingManager.sharedInstance.currentDecisionId)/vote")!
 
-            MeetingManager.createRequest(url: url, parameters: parameters, completionHandler: ToDoCompletion as! (Any) -> Void)
+            MeetingManager.createRequest(url: url, parameters: parameters, completionHandler: VoteNoCompletion)
         }
     }
     

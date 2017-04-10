@@ -22,6 +22,12 @@ class LoginController: UIViewController, UITextFieldDelegate {
         self.usernameTextfield.delegate = self
         self.emailTextfield.delegate = self
     }
+
+    override func viewWillAppear(_ animated: Bool) {
+        MeetingManager.sharedInstance.currentDecisionId = ""
+        MeetingManager.sharedInstance.recording = false
+        MeetingManager.sharedInstance.recordingTag = ""
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
