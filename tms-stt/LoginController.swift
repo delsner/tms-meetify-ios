@@ -41,8 +41,11 @@ class LoginController: UIViewController, UITextFieldDelegate {
         }
         
         let url = URL(string: "\(MeetingManager.url)\(meetingId)/signin")! //change the url
-        
-        MeetingManager.createRequest(url: url, parameters: parameters, completionHandler: loginHandler)
+
+        DispatchQueue.main.async {
+            self.performSegue(withIdentifier: "MainSegue", sender: self)
+        }
+        //MeetingManager.createRequest(url: url, parameters: parameters, completionHandler: loginHandler)
     }
     
     func loginHandler(result: [String: Any]) {
